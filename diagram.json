@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "author": "Bagas Pratama",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 96.6,
+      "left": 114.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -214.4,
+      "left": 34.4,
+      "attrs": {
+        "pins": "i2c"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "lcd1:GND",
+      "uno:GND.1",
+      "black",
+      [
+        "h-124.8",
+        "v288",
+        "h316.5"
+      ]
+    ],
+    [
+      "lcd1:VCC",
+      "uno:5V",
+      "red",
+      [
+        "v0.1",
+        "h-96",
+        "v249.6",
+        "h192",
+        "v211.3"
+      ]
+    ],
+    [
+      "lcd1:SDA",
+      "uno:A4.2",
+      "green",
+      [
+        "h-67.2",
+        "v211.4",
+        "h240.4"
+      ]
+    ],
+    [
+      "lcd1:SCL",
+      "uno:A5.2",
+      "blue",
+      [
+        "h-38.4",
+        "v240.3",
+        "h201.6"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
